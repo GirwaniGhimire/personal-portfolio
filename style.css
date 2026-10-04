@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #fff5f3;
+    color: #4a2c2a;
+    line-height: 1.6;
+}
+
+header {
+    background: #e8607a;
+    color: #fff;
+    padding: 1.2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.2rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: opacity .2s ease;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+}
+
+section {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 8px rgba(232, 96, 122, 0.15);
+    transition: transform .2s ease;
+}
+
+section:hover {
+    transform: translateY(-4px);
+}
+
+section h2 {
+    margin-bottom: 1rem;
+    color: #d9486a;
+    border-bottom: 2px solid #f3b6c4;
+    padding-bottom: .4rem;
+}
+
+#about img {
+    width: 100px;
+    border-radius: 50%;
+    display: block;
+    margin-bottom: 1rem;
+    border: 3px solid #f3b6c4;
+    transition: transform .2s ease;
+}
+
+#about img:hover {
+    transform: scale(1.1);
+}
+
+dl {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: .6rem 1rem;
+}
+
+dt {
+    font-weight: bold;
+    color: #d9486a;
+}
+
+#projects article {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #f7d9df;
+}
+
+#projects a {
+    color: #e8607a;
+    font-weight: bold;
+}
+
+form p {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: .3rem;
+    font-weight: bold;
+    color: #d9486a;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: .5rem;
+    border: 1px solid #f3b6c4;
+    border-radius: 6px;
+    font: inherit;
+    transition: border-color .2s ease;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #e8607a;
+}
+
+button {
+    background: #e8607a;
+    color: #fff;
+    border: none;
+    padding: .6rem 1.4rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background .2s ease;
+}
+
+button:hover {
+    background: #d9486a;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    color: #b4747f;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: .8rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+    dl {
+        grid-template-columns: 1fr;
+    }
+}
